@@ -1,7 +1,13 @@
 numbers = [1,2,3]
-new_numbers = []
 
-numbers.length.times do |index|
-  new_numbers.push(numbers[index]^2)
-end 
-new_numbers
+def square_array(array)
+  count = 0 
+  new_numbers = []
+  while count < array.length do
+    new_numbers.push(array[count]^2)
+    count += 1 
+  end
+  new_numbers
+end
+
+square_array(numbers)
